@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(!isset($_SESSION["username"])){
-    header('location:login.php');
+    header('location:index.html');
 }
 ?>
 
@@ -14,6 +14,6 @@ if(!isset($_SESSION["username"])){
 </head>
 <body>
     <h1>THIS IS THE ADMIN PANEL</h1><?php echo  $_SESSION["username"] ?>
-    <a href="logout.php">Logout</a>
+    <a href="index.html">Logout</a>
 </body>
 </html>
